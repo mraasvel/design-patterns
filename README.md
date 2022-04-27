@@ -1,2 +1,2 @@
-# design-patterns
-Head First Design Patterns Book
+# Head First Design Patterns
+Implementations, exercises
