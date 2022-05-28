@@ -19,10 +19,7 @@ public:
 /* Creation */
 
 	static Configuration& build() {
-		if (config == nullptr) {
-			config = new Configuration();
-		}
-		return *Configuration::config;
+		return &Configuration::config;
 	}
 
 	static void destroy() {
@@ -33,13 +30,12 @@ public:
 	void f() const {}
 	void g() {} // if there are any non-const functions then the singleton won't be thread-safe depending on the context
 
-
 private:
 
-	static Configuration* config;
+	static Configuration config;
 };
 
-Configuration* Configuration::config = nullptr;
+Configuration Configuration::config;
 
 void f() {
 	auto config = Configuration::build();
