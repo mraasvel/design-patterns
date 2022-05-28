@@ -13,5 +13,4 @@ void DatabaseService::add(FactoryService& factory) {
 CleverPointer<DatabaseService> DatabaseService::build(FactoryService& factory) {
 	auto generic = factory.build("database");
 	return generic.convert<DatabaseService>();
-	// return static_cast<DatabaseService*>(factory.build("database"));
 }
