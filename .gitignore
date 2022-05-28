@@ -1,3 +1,7 @@
+# C++
+*.out
+*.o
+
 # Compiled class file
 *.class
 build/
