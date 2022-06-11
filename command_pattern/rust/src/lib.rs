@@ -1,7 +1,6 @@
 mod thread_pool;
 
 use thread_pool::{CommandType, ThreadPool};
-
 struct BasicTask {
 	id: u16,
 }
