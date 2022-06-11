@@ -2,9 +2,11 @@ set(EXEC test.out)
 
 add_executable(${EXEC}
 	main.cpp
+	memory_storage.cpp
 )
 
 target_link_libraries(${EXEC} PUBLIC design)
+target_link_libraries(${EXEC} PUBLIC memory_storage)
 
 # Catch2
 Include(FetchContent)

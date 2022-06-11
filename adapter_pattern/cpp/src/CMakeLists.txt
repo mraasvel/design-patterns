@@ -5,3 +5,4 @@ add_executable(${EXEC}
 )
 
 target_link_libraries(${EXEC} PUBLIC design)
+target_link_libraries(${EXEC} PUBLIC memory_storage)
